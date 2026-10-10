@@ -1,5 +1,5 @@
 import { Picker } from '@react-native-picker/picker';
-import { StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 type Option<T extends string> = {
   label: string;
@@ -57,11 +57,15 @@ const styles = StyleSheet.create({
   },
   picker: {
     flex: 1,
-    height: 40,
+    fontSize: 16,
+    color: '#000',
+    backgroundColor: '#fff',
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    paddingHorizontal: 10,
-    backgroundColor: '#fff',
+    // Android corta o texto quando recebe uma altura fixa menor que o
+    // spinner nativo; sem altura ele mede a própria linha. No iOS o wheel
+    // precisa de uma altura explícita para o layout não estourar.
+    height: Platform.OS === 'ios' ? 120 : undefined,
   },
 });
