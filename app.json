@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "primeiro-projeto",
-    "slug": "snack-907126b4-ad09-499a-8b69-c361fd806c15",
+    "name": "Projeto TG",
+    "slug": "projeto-tg-expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,7 +18,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "primeiro projeto",
+    "description": "Expo/React Native study app with calculators, converters and timers.",
     "plugins": [
       "expo-status-bar",
       "expo-font",
