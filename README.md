@@ -66,3 +66,7 @@ assets/              Icons, splash images and logos
 - `app.json` still contains the original Snack identifiers (`primeiro-projeto`
   and a generated `snack-...` slug). Rename them before distributing the app.
 - This repository does not currently include a license file.
+
+## License
+
+Released under the [MIT License](./LICENSE).
