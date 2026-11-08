@@ -1,5 +1,7 @@
 # Projeto TG — Expo
 
+[![CI](https://github.com/ShiMigui/projeto-tg-expo/actions/workflows/ci.yml/badge.svg)](https://github.com/ShiMigui/projeto-tg-expo/actions/workflows/ci.yml)
+
 A study app built with Expo and React Native. It bundles a calculator, math
 tools, a temperature converter, a stopwatch and a Pomodoro timer in one mobile
 application.
