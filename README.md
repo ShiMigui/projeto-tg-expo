@@ -1,11 +1,68 @@
-# Sample Snack app
+# Projeto TG — Expo
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+A study app built with Expo and React Native. It bundles a calculator, math
+tools, a temperature converter, a stopwatch and a Pomodoro timer in one mobile
+application.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Features
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- Drawer navigation: Home, Ferramentas, Conversão, Timers, Calculadora and Sobre.
+- **Ferramentas** with tab navigation:
+  - **Operações** — addition, subtraction, multiplication and division.
+  - **IMC** — body mass index.
+  - **Bhaskara** — quadratic equation roots.
+- **Conversão** — temperature conversion between Celsius, Fahrenheit and Kelvin.
+- **Timers** — stopwatch and a 20-minute Pomodoro timer.
+- Shared UI components: buttons, cards, text inputs, selects, display and
+  feedback messages.
+- Dark theme.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Stack
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+| Area | Technology |
+| --- | --- |
+| Platform | Expo ~57, React Native 0.86 |
+| UI | React 19, React Navigation 7 (drawer + bottom tabs) |
+| Language | TypeScript |
+| Animation and gestures | react-native-reanimated, react-native-gesture-handler |
+| Layout | react-native-safe-area-context, react-native-screens |
+| Startup | expo-splash-screen, expo-font, expo-status-bar |
+| Logic | `services/MathUtils.ts` |
+
+## Getting started
+
+Requirements: Node.js and npm (the repository includes `package-lock.json`).
+
+```bash
+npm install
+npm start
+```
+
+Then open the project in an Android emulator, an iOS simulator, or Expo Go.
+
+### Scripts
+
+| Script | Description |
+| --- | --- |
+| `npm start` | Start the Expo development server |
+| `npm run android` | Start on Android |
+| `npm run ios` | Start on iOS |
+| `npm run web` | Start in the browser |
+| `npm run typecheck` | Run TypeScript without emitting files |
+
+## Structure
+
+```text
+App.tsx              Drawer navigation and theme
+screens/             Home, tools, conversion, timers, calculator and about
+components/          Reusable UI components
+services/MathUtils.ts  Arithmetic, IMC, Bhaskara and temperature logic
+assets/              Icons, splash images and logos
+```
+
+## Notes
+
+- The interface copy is in Portuguese.
+- `app.json` still contains the original Snack identifiers (`primeiro-projeto`
+  and a generated `snack-...` slug). Rename them before distributing the app.
+- This repository does not currently include a license file.
